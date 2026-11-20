@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 
-/* Makes element sizing easier */
+/* Controls element sizing - Osa */
 * {
 
     box-sizing: border-box;
@@ -9,7 +9,7 @@
 }
 
 
-/* Main page styling */
+/* Main page styling - Osa */
 body {
 
     background-color: #f5f6f8;
@@ -29,7 +29,7 @@ body {
 }
 
 
-/* Top navigation bar */
+/* Top navigation bar - Osa */
 header {
 
     width: 100%;
@@ -50,7 +50,7 @@ header {
 }
 
 
-/* Logo and website name */
+/* Holds the logo and name - Osa */
 #brand {
 
     display: inline-block;
@@ -62,6 +62,7 @@ header {
 }
 
 
+/* TrackIt logo - Osa */
 #logo {
 
     display: inline-block;
@@ -81,6 +82,7 @@ header {
 }
 
 
+/* Website name beside the logo - Osa */
 #brand-text {
 
     display: inline-block;
@@ -112,7 +114,7 @@ header {
 }
 
 
-/* Navigation links */
+/* Navigation links - Osa */
 nav {
 
     display: inline-block;
@@ -146,6 +148,7 @@ nav a:hover {
 }
 
 
+/* Create Assignment navigation button - Osa */
 .nav-button {
 
     background-color: #315b7d;
@@ -157,7 +160,7 @@ nav a:hover {
 }
 
 
-/* Main content area */
+/* Main content area - Osa */
 main {
 
     width: 100%;
@@ -169,7 +172,7 @@ main {
 }
 
 
-/* Main dashboard introduction */
+/* Dashboard introduction - Osa */
 #hero {
 
     width: 92%;
@@ -200,7 +203,7 @@ main {
 }
 
 
-/* Small section headings */
+/* Small headings - Osa */
 .small-heading {
 
     color: #728295;
@@ -212,7 +215,7 @@ main {
 }
 
 
-/* Main buttons */
+/* Main buttons - Osa */
 .primary-button {
 
     display: inline-block;
@@ -247,7 +250,7 @@ main {
 }
 
 
-/* Dashboard totals */
+/* Dashboard total section - Osa */
 #summary-section {
 
     width: 92%;
@@ -261,6 +264,7 @@ main {
 }
 
 
+/* Individual total boxes - Osa */
 .summary-box {
 
     display: inline-block;
@@ -299,7 +303,7 @@ main {
 }
 
 
-/* Dashboard content sections */
+/* Main dashboard sections - Osa */
 .dashboard-section {
 
     width: 92%;
@@ -322,7 +326,7 @@ main {
 }
 
 
-/* Status board */
+/* Assignment board - Osa */
 #board {
 
     width: 100%;
@@ -330,6 +334,7 @@ main {
 }
 
 
+/* Assignment status columns - Osa */
 .status-column {
 
     display: inline-block;
@@ -349,6 +354,7 @@ main {
 }
 
 
+/* To Do background - Osa */
 .todo-column {
 
     background-color: #fff3f2;
@@ -356,6 +362,7 @@ main {
 }
 
 
+/* In Progress background - Osa */
 .progress-column {
 
     background-color: #fff9e9;
@@ -363,6 +370,7 @@ main {
 }
 
 
+/* Completed background - Osa */
 .complete-column {
 
     background-color: #eef8f3;
@@ -370,6 +378,7 @@ main {
 }
 
 
+/* Column headings - Osa */
 .column-title {
 
     font-weight: bold;
@@ -379,6 +388,7 @@ main {
 }
 
 
+/* Assignment count inside each column - Osa */
 .column-count {
 
     float: right;
@@ -392,7 +402,7 @@ main {
 }
 
 
-/* Coloured status circles */
+/* Status circles - Osa */
 .status-dot {
 
     display: inline-block;
@@ -429,7 +439,7 @@ main {
 }
 
 
-/* Individual assignment cards */
+/* Individual assignment cards - Osa */
 .assignment-card {
 
     background-color: white;
@@ -468,7 +478,7 @@ main {
 }
 
 
-/* Assignment table */
+/* Assignment table area - Osa */
 .table-container {
 
     width: 100%;
@@ -487,6 +497,7 @@ table {
 }
 
 
+/* Table headings - Osa */
 th {
 
     background-color: #f6f7f8;
@@ -503,6 +514,7 @@ th {
 }
 
 
+/* Table information - Osa */
 td {
 
     padding: 13px;
@@ -513,7 +525,7 @@ td {
 }
 
 
-/* Create page heading */
+/* Create page heading - Osa */
 .page-heading {
 
     width: 92%;
@@ -534,7 +546,7 @@ td {
 }
 
 
-/* Assignment form area */
+/* Create Assignment form section - Osa */
 .form-section {
 
     width: 92%;
@@ -548,6 +560,7 @@ td {
 }
 
 
+/* Form container - Osa */
 .form-box {
 
     width: 65%;
@@ -575,6 +588,7 @@ td {
 }
 
 
+/* Form inputs - Osa */
 .form-box input[type="text"],
 .form-box input[type="date"],
 .form-box select,
@@ -594,6 +608,7 @@ td {
 }
 
 
+/* Form buttons - Osa */
 .form-box input[type="submit"],
 .form-box input[type="reset"] {
 
@@ -612,7 +627,7 @@ td {
 }
 
 
-/* Bottom of the website */
+/* Website footer - Osa */
 footer {
 
     width: 100%;
@@ -631,7 +646,7 @@ footer {
 }
 
 
-/* Smaller screen layout */
+/* Changes the layout on smaller screens - Osa */
 @media only screen
 and (max-width: 800px) {
 

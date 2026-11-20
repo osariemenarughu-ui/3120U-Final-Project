@@ -1,92 +1,102 @@
 /*
-Displays saved assignments on the Dashboard.
+Displays assignments on the Dashboard - Osa
 */
 
 
+// Waits until the page is loaded - Osa
 document.addEventListener(
     'DOMContentLoaded',
     function() {
 
 
+        // Gets the number of assignments - Osa
         let assignmentCount =
             getAssignmentCount();
 
 
-        // Gets areas of the Dashboard
+        // Gets the assignment table - Osa
         const table =
             document.querySelector(
                 '#assignmentTable'
             );
 
 
+        // Gets the To Do section - Osa
         const todoArea =
             document.querySelector(
                 '#todoAssignments'
             );
 
 
+        // Gets the In Progress section - Osa
         const progressArea =
             document.querySelector(
                 '#progressAssignments'
             );
 
 
+        // Gets the Completed section - Osa
         const completedArea =
             document.querySelector(
                 '#completedAssignments'
             );
 
 
-        // Gets assignment totals
+        // Gets the dashboard totals - Osa
         let counts =
             getDashboardCounts();
 
 
-        // Updates the summary cards
+        // Displays total assignments - Osa
         document.querySelector(
             '#totalCount'
         ).textContent =
             counts.total;
 
 
+        // Displays To Do total - Osa
         document.querySelector(
             '#todoCount'
         ).textContent =
             counts.todo;
 
 
+        // Displays In Progress total - Osa
         document.querySelector(
             '#progressCount'
         ).textContent =
             counts.progress;
 
 
+        // Displays Completed total - Osa
         document.querySelector(
             '#completedCount'
         ).textContent =
             counts.completed;
 
 
-        // Updates the board totals
+        // Updates To Do column count - Osa
         document.querySelector(
             '#todoColumnCount'
         ).textContent =
             counts.todo;
 
 
+        // Updates In Progress column count - Osa
         document.querySelector(
             '#progressColumnCount'
         ).textContent =
             counts.progress;
 
 
+        // Updates Completed column count - Osa
         document.querySelector(
             '#completeColumnCount'
         ).textContent =
             counts.completed;
 
 
-        // Displays every saved assignment
+        // Goes through each assignment - Osa
         for (
             let i = 0;
             i < assignmentCount;
@@ -94,10 +104,12 @@ document.addEventListener(
         ) {
 
 
+            // Gets one assignment - Osa
             let assignment =
                 getAssignment(i);
 
 
+            // Skips an empty assignment - Osa
             if (
                 assignment.title == null ||
                 assignment.title == ''
@@ -108,7 +120,7 @@ document.addEventListener(
             }
 
 
-            // Creates an assignment card
+            // Creates the assignment card - Osa
             const card =
                 document.createElement(
                     'div'
@@ -119,6 +131,7 @@ document.addEventListener(
                 'assignment-card';
 
 
+            // Creates the assignment title - Osa
             const cardTitle =
                 document.createElement(
                     'h3'
@@ -134,6 +147,7 @@ document.addEventListener(
             );
 
 
+            // Creates the course text - Osa
             const courseText =
                 document.createElement(
                     'p'
@@ -149,6 +163,7 @@ document.addEventListener(
             );
 
 
+            // Creates the due date text - Osa
             const dateText =
                 document.createElement(
                     'p'
@@ -165,6 +180,7 @@ document.addEventListener(
             );
 
 
+            // Creates the priority text - Osa
             const priorityText =
                 document.createElement(
                     'p'
@@ -181,7 +197,7 @@ document.addEventListener(
             );
 
 
-            // Puts the card in the correct column
+            // Places Not Started assignments in To Do - Osa
             if (
                 assignment.status ==
                 'Not Started'
@@ -194,6 +210,7 @@ document.addEventListener(
             }
 
 
+            // Places active assignments in In Progress - Osa
             if (
                 assignment.status ==
                 'In Progress'
@@ -206,6 +223,7 @@ document.addEventListener(
             }
 
 
+            // Places finished assignments in Completed - Osa
             if (
                 assignment.status ==
                 'Completed'
@@ -218,13 +236,14 @@ document.addEventListener(
             }
 
 
-            // Creates an assignment table row
+            // Creates a new table row - Osa
             const row =
                 document.createElement(
                     'tr'
                 );
 
 
+            // Adds assignment information to the table - Osa
             addTableCell(
                 row,
                 assignment.title
@@ -255,6 +274,7 @@ document.addEventListener(
             );
 
 
+            // Adds the row to the table - Osa
             table.appendChild(
                 row
             );
@@ -265,7 +285,7 @@ document.addEventListener(
 );
 
 
-// Adds information to the table
+// Creates one table cell - Osa
 function addTableCell(
     row,
     text

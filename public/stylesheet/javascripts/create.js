@@ -1,27 +1,28 @@
 /*
-Saves information entered in the assignment form.
+Handles the Create Assignment form - Osa
 */
 
 
+// Waits until the page is loaded - Osa
 document.addEventListener(
     'DOMContentLoaded',
     function() {
 
 
-        // Gets the form
+        // Gets the assignment form - Osa
         const form =
             document.querySelector(
                 '#assignmentForm'
             );
 
 
-        // Runs when the form is submitted
+        // Runs when the form is submitted - Osa
         form.addEventListener(
             'submit',
             function() {
 
 
-                // Creates the assignment
+                // Gets the information from the form - Osa
                 const assignment = {
 
                     title:
@@ -57,7 +58,7 @@ document.addEventListener(
                 };
 
 
-                // Saves the assignment
+                // Saves the assignment - Osa
                 createAssignment(
                     assignment
                 );
