@@ -1,10 +1,4 @@
-/*
-TrackIt Assignment Tracker
-
-*/
-
-
-// Loads Express
+// Loads the Express module
 var express = require('express');
 
 
@@ -12,7 +6,7 @@ var express = require('express');
 var app = express();
 
 
-// Tells Express where the EJS files are stored
+// Sets the location of the EJS files
 app.set(
     'views',
     './views'
@@ -26,16 +20,13 @@ app.set(
 );
 
 
-// Makes the public folder available
+// Allows the website to use files in public
 app.use(
     express.static('./public')
 );
 
 
-/*
-Dashboard Route
-*/
-
+// Displays the Dashboard
 app.get(
     '/',
     function(req, res) {
@@ -43,10 +34,7 @@ app.get(
         res.render(
             'index',
             {
-
-                title:
-                    'TrackIt Dashboard'
-
+                title: 'TrackIt Dashboard'
             }
         );
 
@@ -54,13 +42,7 @@ app.get(
 );
 
 
-/*
-Create Assignment Page
-
-The form functionality will be added
-in the next project version.
-*/
-
+// Displays the Create Assignment page
 app.get(
     '/create',
     function(req, res) {
@@ -68,10 +50,7 @@ app.get(
         res.render(
             'create',
             {
-
-                title:
-                    'Create Assignment'
-
+                title: 'Create Assignment'
             }
         );
 
@@ -91,5 +70,4 @@ console.log(
 
 
 // Makes the application available
-module.exports =
-    app;
+module.exports = app;

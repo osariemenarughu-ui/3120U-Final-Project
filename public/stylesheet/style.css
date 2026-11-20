@@ -1,10 +1,7 @@
 @charset "UTF-8";
 
 
-/*
-Main Page
-*/
-
+/* Makes element sizing easier */
 * {
 
     box-sizing: border-box;
@@ -12,6 +9,7 @@ Main Page
 }
 
 
+/* Main page styling */
 body {
 
     background-color: #f5f6f8;
@@ -31,10 +29,7 @@ body {
 }
 
 
-/*
-Navigation
-*/
-
+/* Top navigation bar */
 header {
 
     width: 100%;
@@ -55,6 +50,7 @@ header {
 }
 
 
+/* Logo and website name */
 #brand {
 
     display: inline-block;
@@ -116,6 +112,7 @@ header {
 }
 
 
+/* Navigation links */
 nav {
 
     display: inline-block;
@@ -142,6 +139,13 @@ nav a {
 }
 
 
+nav a:hover {
+
+    color: #315b7d;
+
+}
+
+
 .nav-button {
 
     background-color: #315b7d;
@@ -153,10 +157,7 @@ nav a {
 }
 
 
-/*
-Main Content
-*/
-
+/* Main content area */
 main {
 
     width: 100%;
@@ -168,10 +169,7 @@ main {
 }
 
 
-/*
-Hero
-*/
-
+/* Main dashboard introduction */
 #hero {
 
     width: 92%;
@@ -202,6 +200,7 @@ Hero
 }
 
 
+/* Small section headings */
 .small-heading {
 
     color: #728295;
@@ -213,6 +212,7 @@ Hero
 }
 
 
+/* Main buttons */
 .primary-button {
 
     display: inline-block;
@@ -247,10 +247,7 @@ Hero
 }
 
 
-/*
-Summary
-*/
-
+/* Dashboard totals */
 #summary-section {
 
     width: 92%;
@@ -297,13 +294,12 @@ Summary
 
     color: #315b7d;
 
+    font-size: 28px;
+
 }
 
 
-/*
-Dashboard
-*/
-
+/* Dashboard content sections */
 .dashboard-section {
 
     width: 92%;
@@ -326,6 +322,7 @@ Dashboard
 }
 
 
+/* Status board */
 #board {
 
     width: 100%;
@@ -339,7 +336,7 @@ Dashboard
 
     width: 32%;
 
-    min-height: 200px;
+    min-height: 220px;
 
     margin-right: 1%;
 
@@ -377,9 +374,25 @@ Dashboard
 
     font-weight: bold;
 
+    margin-bottom: 15px;
+
 }
 
 
+.column-count {
+
+    float: right;
+
+    background-color: white;
+
+    padding: 3px 8px;
+
+    border-radius: 10px;
+
+}
+
+
+/* Coloured status circles */
 .status-dot {
 
     display: inline-block;
@@ -416,22 +429,51 @@ Dashboard
 }
 
 
-.empty-text {
+/* Individual assignment cards */
+.assignment-card {
 
-    color: #747b84;
+    background-color: white;
 
-    font-size: 13px;
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    border:
+        1px solid #e4e6e8;
+
+    border-radius: 7px;
 
 }
 
 
-/*
-Tables
-*/
+.assignment-card h3 {
 
+    margin-top: 0px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.assignment-card p {
+
+    color: #6c737c;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* Assignment table */
 .table-container {
 
     width: 100%;
+
+    overflow: auto;
 
 }
 
@@ -471,10 +513,7 @@ td {
 }
 
 
-/*
-Create Page
-*/
-
+/* Create page heading */
 .page-heading {
 
     width: 92%;
@@ -488,15 +527,34 @@ Create Page
 }
 
 
-.placeholder-section {
+.page-heading p {
 
-    width: 70%;
+    color: #626a74;
+
+}
+
+
+/* Assignment form area */
+.form-section {
+
+    width: 92%;
 
     margin-left: auto;
 
     margin-right: auto;
 
-    margin-top: 30px;
+    margin-top: 20px;
+
+}
+
+
+.form-box {
+
+    width: 65%;
+
+    margin-left: auto;
+
+    margin-right: auto;
 
     padding: 30px;
 
@@ -510,10 +568,51 @@ Create Page
 }
 
 
-/*
-Footer
-*/
+.form-box label {
 
+    font-weight: bold;
+
+}
+
+
+.form-box input[type="text"],
+.form-box input[type="date"],
+.form-box select,
+.form-box textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 6px;
+
+    border:
+        1px solid #cfd4d9;
+
+    border-radius: 5px;
+
+}
+
+
+.form-box input[type="submit"],
+.form-box input[type="reset"] {
+
+    background-color: #315b7d;
+
+    color: white;
+
+    padding: 10px 16px;
+
+    border: 0px;
+
+    border-radius: 5px;
+
+    margin-right: 8px;
+
+}
+
+
+/* Bottom of the website */
 footer {
 
     width: 100%;
@@ -532,10 +631,7 @@ footer {
 }
 
 
-/*
-Responsive Layout
-*/
-
+/* Smaller screen layout */
 @media only screen
 and (max-width: 800px) {
 
@@ -582,6 +678,13 @@ and (max-width: 800px) {
         width: 100%;
 
         margin-bottom: 15px;
+
+    }
+
+
+    .form-box {
+
+        width: 95%;
 
     }
 

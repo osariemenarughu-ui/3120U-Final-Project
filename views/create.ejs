@@ -13,9 +13,19 @@
         <%= title %>
     </title>
 
+
+    <!-- Connects the page to the CSS -->
     <link rel="stylesheet"
           type="text/css"
           href="/stylesheet/style.css">
+
+
+    <!-- Loads the assignment storage functions -->
+    <script src="/stylesheet/javascripts/storage.js"></script>
+
+
+    <!-- Controls the Create Assignment form -->
+    <script src="/stylesheet/javascripts/create.js"></script>
 
 </head>
 
@@ -23,6 +33,7 @@
 <body>
 
 
+<!-- Top navigation bar -->
 <header>
 
     <div id="brand">
@@ -69,6 +80,7 @@
 <main>
 
 
+    <!-- Page title -->
     <section class="page-heading">
 
         <p class="small-heading">
@@ -80,10 +92,182 @@
             Create Assignment
         </h2>
 
+
+        <p>
+            Add a new assignment to your dashboard.
+        </p>
+
     </section>
 
 
-    <section class="placeholder-section">
+    <!-- Assignment form -->
+    <section class="form-section">
+
+        <div class="form-box">
+
+
+            <form id="assignmentForm"
+                  action="/"
+                  method="get">
+
+
+                <p>
+
+                    <label for="title">
+                        Assignment Name
+                    </label>
+
+                    <br>
+
+
+                    <input type="text"
+                           id="title"
+                           name="title"
+                           required>
+
+                </p>
+
+
+                <p>
+
+                    <label for="course">
+                        Course
+                    </label>
+
+                    <br>
+
+
+                    <input type="text"
+                           id="course"
+                           name="course"
+                           required>
+
+                </p>
+
+
+                <p>
+
+                    <label for="dueDate">
+                        Due Date
+                    </label>
+
+                    <br>
+
+
+                    <input type="date"
+                           id="dueDate"
+                           name="dueDate"
+                           required>
+
+                </p>
+
+
+                <p>
+
+                    <label for="priority">
+                        Priority
+                    </label>
+
+                    <br>
+
+
+                    <select id="priority"
+                            name="priority">
+
+
+                        <option value="Low">
+                            Low
+                        </option>
+
+
+                        <option value="Medium">
+                            Medium
+                        </option>
+
+
+                        <option value="High">
+                            High
+                        </option>
+
+
+                    </select>
+
+                </p>
+
+
+                <p>
+
+                    <label for="status">
+                        Status
+                    </label>
+
+                    <br>
+
+
+                    <select id="status"
+                            name="status">
+
+
+                        <option value="Not Started">
+                            Not Started
+                        </option>
+
+
+                        <option value="In Progress">
+                            In Progress
+                        </option>
+
+
+                        <option value="Completed">
+                            Completed
+                        </option>
+
+
+                    </select>
+
+                </p>
+
+
+                <p>
+
+                    <label for="description">
+                        Description / Notes
+                    </label>
+
+                    <br>
+
+
+                    <textarea id="description"
+                              name="description"
+                              rows="5"></textarea>
+
+                </p>
+
+
+                <p>
+
+                    <input type="submit"
+                           value="Create Assignment">
+
+
+                    <input type="reset"
+                           value="Clear">
+
+                </p>
+
+
+            </form>
+
+
+            <a href="/"
+               class="secondary-button">
+
+                Back to Dashboard
+
+            </a>
+
+
+        </div>
 
     </section>
 
@@ -91,6 +275,7 @@
 </main>
 
 
+<!-- Bottom of the page -->
 <footer>
 
     <p>
