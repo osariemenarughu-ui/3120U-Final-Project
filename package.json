@@ -1,0 +1,15 @@
+{
+    "name": "trackit-assignment-tracker",
+    "version": "1.0.0",
+    "description": "INFR3120 TrackIt Assignment Tracker",
+    "main": "app.js",
+
+    "scripts": {
+        "start": "node app.js"
+    },
+
+    "dependencies": {
+        "ejs": "^3.1.10",
+        "express": "^4.21.2"
+    }
+}
