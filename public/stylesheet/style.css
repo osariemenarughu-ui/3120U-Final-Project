@@ -326,6 +326,32 @@ main {
 }
 
 
+/* Section headings - Osa */
+.section-heading {
+
+    margin-bottom: 20px;
+
+}
+
+
+.section-heading div {
+
+    display: inline-block;
+
+    width: 70%;
+
+}
+
+
+/* Positions buttons beside headings - Zaki */
+.section-heading .primary-button,
+.section-heading .text-link {
+
+    float: right;
+
+}
+
+
 /* Assignment board - Osa */
 #board {
 
@@ -485,6 +511,8 @@ main {
 
     overflow: auto;
 
+    margin-bottom: 20px;
+
 }
 
 
@@ -521,6 +549,37 @@ td {
 
     border-bottom:
         1px solid #eeeeee;
+
+}
+
+
+/* Link to the All Assignments page - Zaki */
+.text-link {
+
+    color: #315b7d;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+.text-link:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* Message when there are no assignments - Zaki */
+#emptyMessage {
+
+    color: #747b84;
+
+    padding-top: 15px;
+
+    padding-bottom: 15px;
 
 }
 

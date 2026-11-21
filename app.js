@@ -58,6 +58,22 @@ app.get(
 );
 
 
+// Displays the All Assignments page - Zaki
+app.get(
+    '/assignments',
+    function(req, res) {
+
+        res.render(
+            'assignments',
+            {
+                title: 'My Assignments'
+            }
+        );
+
+    }
+);
+
+
 // Starts the server - Osa
 app.listen(
     3000
