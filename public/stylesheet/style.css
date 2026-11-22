@@ -138,10 +138,15 @@ nav a {
 
     padding: 10px;
 
+    border-radius: 6px;
+
 }
 
 
+/* Navigation hover effect - Joseph */
 nav a:hover {
+
+    background-color: #eef2f5;
 
     color: #315b7d;
 
@@ -156,6 +161,16 @@ nav a:hover {
     color: white;
 
     border-radius: 6px;
+
+}
+
+
+/* Keeps button white when hovering - Joseph */
+nav .nav-button:hover {
+
+    background-color: #24465f;
+
+    color: white;
 
 }
 
@@ -187,6 +202,9 @@ main {
 
     background-color: #edf3f7;
 
+    border:
+        1px solid #dde6ec;
+
     border-radius: 10px;
 
 }
@@ -212,6 +230,8 @@ main {
 
     font-weight: bold;
 
+    letter-spacing: 1px;
+
 }
 
 
@@ -233,6 +253,14 @@ main {
 }
 
 
+/* Main button hover - Joseph */
+.primary-button:hover {
+
+    background-color: #24465f;
+
+}
+
+
 .secondary-button {
 
     display: inline-block;
@@ -246,6 +274,14 @@ main {
     text-decoration: none;
 
     border-radius: 6px;
+
+}
+
+
+/* Secondary button hover - Joseph */
+.secondary-button:hover {
+
+    background-color: #d5dde4;
 
 }
 
@@ -270,6 +306,8 @@ main {
     display: inline-block;
 
     width: 23%;
+
+    min-height: 110px;
 
     margin-right: 1%;
 
@@ -479,6 +517,9 @@ main {
 
     border-radius: 7px;
 
+    box-shadow:
+        2px 2px 5px #dddddd;
+
 }
 
 
@@ -500,6 +541,28 @@ main {
     margin-top: 5px;
 
     margin-bottom: 5px;
+
+}
+
+
+/* Edit link on assignment cards - Joseph */
+.assignment-card a {
+
+    display: inline-block;
+
+    margin-top: 8px;
+
+    color: #315b7d;
+
+    text-decoration: none;
+
+}
+
+
+/* Card Edit link hover - Joseph */
+.assignment-card a:hover {
+
+    text-decoration: underline;
 
 }
 
@@ -553,6 +616,35 @@ td {
 }
 
 
+<<<<<<< HEAD
+=======
+/* Edit buttons inside tables - Joseph */
+td a {
+
+    display: inline-block;
+
+    background-color: #315b7d;
+
+    color: white;
+
+    padding: 7px 12px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+}
+
+
+/* Edit button hover - Joseph */
+td a:hover {
+
+    background-color: #24465f;
+
+}
+
+
+>>>>>>> 540d454 (Final)
 /* Link to the All Assignments page - Zaki */
 .text-link {
 
@@ -565,6 +657,10 @@ td {
 }
 
 
+<<<<<<< HEAD
+=======
+/* All Assignments link hover - Zaki */
+>>>>>>> 540d454 (Final)
 .text-link:hover {
 
     text-decoration: underline;
@@ -584,7 +680,11 @@ td {
 }
 
 
+<<<<<<< HEAD
 /* Create page heading - Osa */
+=======
+/* Form page heading - Osa */
+>>>>>>> 540d454 (Final)
 .page-heading {
 
     width: 92%;
@@ -605,7 +705,7 @@ td {
 }
 
 
-/* Create Assignment form section - Osa */
+/* Form section - Osa */
 .form-section {
 
     width: 92%;
@@ -664,6 +764,20 @@ td {
 
     border-radius: 5px;
 
+    font-family:
+        Verdana,
+        Geneva,
+        Arial,
+        sans-serif;
+
+}
+
+
+/* Lets the description box resize - Joseph */
+.form-box textarea {
+
+    resize: vertical;
+
 }
 
 
@@ -682,6 +796,17 @@ td {
     border-radius: 5px;
 
     margin-right: 8px;
+
+    cursor: pointer;
+
+}
+
+
+/* Form button hover - Joseph */
+.form-box input[type="submit"]:hover,
+.form-box input[type="reset"]:hover {
+
+    background-color: #24465f;
 
 }
 
@@ -721,6 +846,7 @@ and (max-width: 800px) {
     }
 
 
+    /* Stacks navigation links - Joseph */
     nav {
 
         display: block;
@@ -730,6 +856,32 @@ and (max-width: 800px) {
         text-align: center;
 
         margin-top: 15px;
+
+    }
+
+
+    nav a {
+
+        display: block;
+
+        width: 80%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        margin-top: 5px;
+
+        margin-bottom: 5px;
+
+    }
+
+
+    .hero-text {
+
+        display: block;
+
+        width: 100%;
 
     }
 

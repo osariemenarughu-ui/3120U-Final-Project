@@ -197,6 +197,26 @@ document.addEventListener(
             );
 
 
+            // Creates the Edit link on the card - Joseph
+            const editLink =
+                document.createElement(
+                    'a'
+                );
+
+
+            editLink.textContent =
+                'Edit Assignment';
+
+
+            editLink.href =
+                '/edit?id=' + i;
+
+
+            card.appendChild(
+                editLink
+            );
+
+
             // Places Not Started assignments in To Do - Osa
             if (
                 assignment.status ==
@@ -271,6 +291,37 @@ document.addEventListener(
             addTableCell(
                 row,
                 assignment.status
+            );
+
+
+            // Creates the table Edit button - Joseph
+            const actionCell =
+                document.createElement(
+                    'td'
+                );
+
+
+            const tableEdit =
+                document.createElement(
+                    'a'
+                );
+
+
+            tableEdit.textContent =
+                'Edit';
+
+
+            tableEdit.href =
+                '/edit?id=' + i;
+
+
+            actionCell.appendChild(
+                tableEdit
+            );
+
+
+            row.appendChild(
+                actionCell
             );
 
 

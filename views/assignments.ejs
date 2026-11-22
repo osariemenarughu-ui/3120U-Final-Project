@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <nav>
 
     <a href="/">
@@ -19,3 +20,230 @@
     </a>
 
 </nav>
+=======
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>
+        <%= title %>
+    </title>
+
+
+    <!-- Connects the page to the CSS - Zaki -->
+    <link rel="stylesheet"
+          type="text/css"
+          href="/stylesheet/style.css">
+
+
+    <!-- Loads saved assignment functions - Zaki -->
+    <script src="/stylesheet/javascripts/storage.js"></script>
+
+
+    <!-- Displays assignments on this page - Zaki -->
+    <script src="/stylesheet/javascripts/assignments.js"></script>
+
+</head>
+
+
+<body>
+
+
+<!-- Top navigation bar - Zaki -->
+<header>
+
+
+    <!-- Website logo and name - Zaki -->
+    <div id="brand">
+
+        <div id="logo">
+            TI
+        </div>
+
+
+        <div id="brand-text">
+
+            <h1>
+                TrackIt
+            </h1>
+
+            <p>
+                Assignment Tracker
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Page navigation - Zaki -->
+    <nav>
+
+        <a href="/">
+            Dashboard
+        </a>
+
+
+        <a href="/assignments">
+            Assignments
+        </a>
+
+
+        <a href="/create"
+           class="nav-button">
+
+            + Create Assignment
+
+        </a>
+
+    </nav>
+
+
+</header>
+
+
+<main>
+
+
+    <!-- Page heading - Zaki -->
+    <section class="page-heading">
+
+        <p class="small-heading">
+            ASSIGNMENTS
+        </p>
+
+
+        <h2>
+            All Assignments
+        </h2>
+
+
+        <p>
+            View and manage all of your saved assignments.
+        </p>
+
+    </section>
+
+
+    <!-- Assignment list - Zaki -->
+    <section class="dashboard-section">
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <h2>
+                    My Assignments
+                </h2>
+
+
+                <!-- Explains the Edit feature - Joseph -->
+                <p>
+                    Use the Edit button to update an assignment.
+                </p>
+
+            </div>
+
+
+            <a href="/create"
+               class="primary-button">
+
+                + Add Assignment
+
+            </a>
+
+        </div>
+
+
+        <!-- Holds the assignment table - Zaki -->
+        <div class="table-container">
+
+
+            <table>
+
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Assignment
+                        </th>
+
+
+                        <th>
+                            Course
+                        </th>
+
+
+                        <th>
+                            Due Date
+                        </th>
+
+
+                        <th>
+                            Priority
+                        </th>
+
+
+                        <th>
+                            Status
+                        </th>
+
+
+                        <!-- Edit action column - Joseph -->
+                        <th>
+                            Action
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <!-- JavaScript adds assignments here - Zaki -->
+                <tbody id="assignmentTable">
+
+                </tbody>
+
+
+            </table>
+
+
+        </div>
+
+
+        <!-- Shows when there are no assignments - Zaki -->
+        <p id="emptyMessage">
+
+        </p>
+
+
+    </section>
+
+
+</main>
+
+
+<!-- Website footer - Zaki -->
+<footer>
+
+    <p>
+        TrackIt | INFR3120 Fall 2026 Project
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
+>>>>>>> 540d454 (Final)

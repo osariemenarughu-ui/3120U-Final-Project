@@ -105,6 +105,40 @@ document.addEventListener(
             );
 
 
+<<<<<<< HEAD
+=======
+            // Creates the Edit button - Joseph
+            const actionCell =
+                document.createElement(
+                    'td'
+                );
+
+
+            const editLink =
+                document.createElement(
+                    'a'
+                );
+
+
+            editLink.textContent =
+                'Edit';
+
+
+            editLink.href =
+                '/edit?id=' + i;
+
+
+            actionCell.appendChild(
+                editLink
+            );
+
+
+            row.appendChild(
+                actionCell
+            );
+
+
+>>>>>>> 540d454 (Final)
             // Adds the row to the table - Zaki
             table.appendChild(
                 row

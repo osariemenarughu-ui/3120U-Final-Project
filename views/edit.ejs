@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>
+        <%= title %>
+    </title>
+
+
+    <!-- Connects the page to the CSS - Joseph -->
+    <link rel="stylesheet"
+          type="text/css"
+          href="/stylesheet/style.css">
+
+
+    <!-- Loads assignment storage functions - Joseph -->
+    <script src="/stylesheet/javascripts/storage.js"></script>
+
+
+    <!-- Controls the Edit Assignment page - Joseph -->
+    <script src="/stylesheet/javascripts/edit.js"></script>
+
+</head>
+
+
+<body>
+
+
+<!-- Top navigation bar - Joseph -->
+<header>
+
+
+    <!-- Website logo and name - Joseph -->
+    <div id="brand">
+
+        <div id="logo">
+            TI
+        </div>
+
+
+        <div id="brand-text">
+
+            <h1>
+                TrackIt
+            </h1>
+
+            <p>
+                Assignment Tracker
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Page navigation - Joseph -->
+    <nav>
+
+        <a href="/">
+            Dashboard
+        </a>
+
+
+        <a href="/assignments">
+            Assignments
+        </a>
+
+
+        <a href="/create"
+           class="nav-button">
+
+            + Create Assignment
+
+        </a>
+
+    </nav>
+
+
+</header>
+
+
+<main>
+
+
+    <!-- Edit page heading - Joseph -->
+    <section class="page-heading">
+
+        <p class="small-heading">
+            EDIT
+        </p>
+
+
+        <h2>
+            Edit Assignment
+        </h2>
+
+
+        <p>
+            Update the assignment information below.
+        </p>
+
+    </section>
+
+
+    <!-- Edit Assignment form - Joseph -->
+    <section class="form-section">
+
+        <div class="form-box">
+
+
+            <!-- Stores which assignment is being edited - Joseph -->
+            <input type="hidden"
+                   id="assignmentId"
+                   value="<%= id %>">
+
+
+            <form id="editForm"
+                  action="/"
+                  method="get">
+
+
+                <!-- Assignment name - Joseph -->
+                <p>
+
+                    <label for="title">
+                        Assignment Name
+                    </label>
+
+                    <br>
+
+
+                    <input type="text"
+                           id="title"
+                           name="title"
+                           required>
+
+                </p>
+
+
+                <!-- Course name - Joseph -->
+                <p>
+
+                    <label for="course">
+                        Course
+                    </label>
+
+                    <br>
+
+
+                    <input type="text"
+                           id="course"
+                           name="course"
+                           required>
+
+                </p>
+
+
+                <!-- Due date - Joseph -->
+                <p>
+
+                    <label for="dueDate">
+                        Due Date
+                    </label>
+
+                    <br>
+
+
+                    <input type="date"
+                           id="dueDate"
+                           name="dueDate"
+                           required>
+
+                </p>
+
+
+                <!-- Priority - Joseph -->
+                <p>
+
+                    <label for="priority">
+                        Priority
+                    </label>
+
+                    <br>
+
+
+                    <select id="priority"
+                            name="priority">
+
+
+                        <option value="Low">
+                            Low
+                        </option>
+
+
+                        <option value="Medium">
+                            Medium
+                        </option>
+
+
+                        <option value="High">
+                            High
+                        </option>
+
+
+                    </select>
+
+                </p>
+
+
+                <!-- Assignment status - Joseph -->
+                <p>
+
+                    <label for="status">
+                        Status
+                    </label>
+
+                    <br>
+
+
+                    <select id="status"
+                            name="status">
+
+
+                        <option value="Not Started">
+                            Not Started
+                        </option>
+
+
+                        <option value="In Progress">
+                            In Progress
+                        </option>
+
+
+                        <option value="Completed">
+                            Completed
+                        </option>
+
+
+                    </select>
+
+                </p>
+
+
+                <!-- Assignment notes - Joseph -->
+                <p>
+
+                    <label for="description">
+                        Description / Notes
+                    </label>
+
+                    <br>
+
+
+                    <textarea id="description"
+                              name="description"
+                              rows="5"></textarea>
+
+                </p>
+
+
+                <!-- Saves the changes - Joseph -->
+                <p>
+
+                    <input type="submit"
+                           value="Save Changes">
+
+                </p>
+
+
+            </form>
+
+
+            <!-- Returns without changing the assignment - Joseph -->
+            <a href="/"
+               class="secondary-button">
+
+                Cancel
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- Website footer - Joseph -->
+<footer>
+
+    <p>
+        TrackIt | INFR3120 Fall 2026 Project
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

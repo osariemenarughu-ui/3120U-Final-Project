@@ -74,6 +74,26 @@ app.get(
 );
 
 
+<<<<<<< HEAD
+=======
+// Displays the Edit Assignment page - Joseph
+app.get(
+    '/edit',
+    function(req, res) {
+
+        res.render(
+            'edit',
+            {
+                title: 'Edit Assignment',
+                id: req.query.id
+            }
+        );
+
+    }
+);
+
+
+>>>>>>> 540d454 (Final)
 // Starts the server - Osa
 app.listen(
     3000
