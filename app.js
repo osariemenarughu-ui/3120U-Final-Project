@@ -74,8 +74,6 @@ app.get(
 );
 
 
-<<<<<<< HEAD
-=======
 // Displays the Edit Assignment page - Joseph
 app.get(
     '/edit',
@@ -93,18 +91,23 @@ app.get(
 );
 
 
->>>>>>> 540d454 (Final)
-// Starts the server - Osa
+// Uses Render's port or 3000 when running locally
+var PORT =
+    process.env.PORT || 3000;
+
+
+// Starts the server
 app.listen(
-    3000
+    PORT,
+    '0.0.0.0'
 );
 
 
-// Shows the server address in the terminal - Osa
+// Shows the server address
 console.log(
-    'Server running at http://localhost:3000/'
+    'Server running on port ' + PORT
 );
 
 
-// Makes the application available - Osa
+// Makes the application available
 module.exports = app;
